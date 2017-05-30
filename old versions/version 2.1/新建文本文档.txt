@@ -1,0 +1,6 @@
+0 movetowork
+1 move to home
+2 calibration
+3 get pos
+4 interrupt
+5 move to pos
