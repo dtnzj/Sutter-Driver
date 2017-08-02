@@ -12,6 +12,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Command Tranform.vi" Type="VI" URL="../Command Tranform.vi"/>
 		<Item Name="DataTransM2C.vi" Type="VI" URL="../DataTransM2C.vi"/>
+		<Item Name="MovingDateTrans V1.0 for TCP.vi" Type="VI" URL="../MovingDateTrans V1.0 for TCP.vi"/>
 		<Item Name="TCPserver.vi" Type="VI" URL="../TCPserver.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -48,7 +49,6 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="MovingDateTrans V1.0 for TCP.vi" Type="VI" URL="../MovingDateTrans V1.0 for TCP.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
