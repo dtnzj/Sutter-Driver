@@ -7,20 +7,20 @@ Created on Thu Mar 30 19:22:05 2017
 """
 
 import serial as srl
-import numpy  as np
-import struct
+#import numpy  as np
+#import struct
 
 class Sutter_driver:
-    obj = None
+    #obj = None
     
     def __init__(self, dev, baudrate,Ans = 0):
         self.obj = srl.Serial(dev,baudrate) 
         self.__Ans__ = Ans
-        print (self.obj.portstr,'create successful')
+        print((self.obj.portstr,'create successful'))
     
     def __del__( self ):  
         self.obj.close()
-        print (self.obj.portstr,'close successful')
+        print((self.obj.portstr,'close successful'))
      
     def WaitAnswer( self ):
         Cr = 0
@@ -61,12 +61,14 @@ class Sutter_driver:
 
 if __name__ == '__main__':
     #np.set_printoptions(threshold = 100)
-    p = Sutter_driver('/dev/ttyS1',115200)  
+    p = Sutter_driver('com2',128000)  
+    #p = Sutter_driver('/dev/ttyS1',115200)  
 #    Cr = p.Move2Pos(''.join(list('  100  200  300'))); print (Cr)
 #   move to [100,200,300]
-    Cr = p.Move2Pos(b'\x4d\x40\x06\x00\x00\x80\x0C\x00\x00\xC0\x12\x00\x00\x0D'); print (Cr)
+#    Cr = p.Move2Pos(b'\x4d\x40\x06\x00\x00\x80\x0C\x00\x00\xC0\x12\x00\x00\x0D'); print (Cr)
 #    
  #   p.Interrupt()
- #   pos = p.CurrentPos(); print (pos)
+    pos = p.CurrentPos(); print (pos)
 #    
+    #p.Calibration()
 
